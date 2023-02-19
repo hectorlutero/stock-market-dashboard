@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root">
+      <div id="company-buttons">
+        <button class="company-button active" data-symbol="AAPL">
+          Apple Inc.
+        </button>
+        <button class="company-button" data-symbol="MSFT">
+          Microsoft Corporation
+        </button>
+        <button class="company-button" data-symbol="AMZN">
+          Amazon.com, Inc.
+        </button>
+        <button class="company-button" data-symbol="META">
+          Facebook, Inc.
+        </button>
+        <button class="company-button" data-symbol="GOOGL">
+          Alphabet Inc. (Google)
+        </button>
+        <button class="company-button" data-symbol="NFLX">Netflix, Inc.</button>
+        <button class="company-button" data-symbol="TSLA">Tesla, Inc.</button>
+        <button class="company-button" data-symbol="TWTR">Twitter, Inc.</button>
+        <button class="company-button" data-symbol="KO">
+          The Coca-Cola Company
+        </button>
+        <button class="company-button" data-symbol="NVDA">Nvidia Corp</button>
+      </div>
+      <div class="entropy-result">
+        <h1>Entropy Calculus</h1>
+        <h4>Level of Uncertainty: <span class="uncertainty-value"></span></h4>
+      </div>
+
+      <table id="stock-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Open</th>
+            <th>High</th>
+            <th>Low</th>
+            <th>Close</th>
+            <th>Volume</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <div id="loading">
+        <div class="lds-ring">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
